@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Cards from './components/Cards/Cards';
 import Chart from './components/Chart/Chart';
 import CountryPicker from './components/CountryPicker/CountryPicker';
+import Footer from './components/Footer/Footer';
 import styles from './App.module.css';
 import { fetchData } from './api';
 
@@ -34,6 +35,7 @@ class App extends Component {
 				<Cards data={data}/>
 				<CountryPicker handleCountryChange={this.handleCountryChange}/>
 				<Chart data={data} country={country}/>
+				<Footer />
 			</div>
 		 );
 	}
